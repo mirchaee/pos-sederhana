@@ -36,10 +36,22 @@
             @foreach ($fiturAwal as $fitur)
             <div class="rounded-2xl border border-orange-100 bg-white p-5 shadow-sm">
                 <p class="font-semibold text-orange-700">{{ $fitur }}</p>
-                <p class="mt-2 text-sm text-slate-500">Akan dikembangkan pada modul berikutnya.</p>
+                <p class="mt-2 text-sm text-slate-500">Siap Dikembangkan</p>
             </div>
             @endforeach
         </section>
+
+        <footer class="mt-16 pb-12 text-center border-t pt-8 text-slate-500">
+            <p class="text-xs uppercase tracking-widest font-bold text-slate-400 mb-4">Dikembangkan Oleh Kelompok:</p>
+            <div class="grid gap-2 text-sm">
+                <p class="font-semibold text-orange-700">Muhammad Fawwaz Bazily - 245150201111005</p>
+                <p class="font-semibold text-orange-700">Muhammad Fahmi Yakhsya - 245150200111011</p>
+                <p class="font-semibold text-orange-700">Marvin Ligarta - 245150200111063</p>
+                <p class="font-semibold text-orange-700">Rizaldi Arydian Febriyanto - 245150201111026</p>
+                <p class="font-semibold text-orange-700">Roniarta Sibarani - 245150200111036</p>
+            </div>
+            <p class="mt-6 text-xs italic">Pengembangan Aplikasi Web - Universitas Brawijaya</p>
+        </footer>
     </main>
 </body>
 </html>
