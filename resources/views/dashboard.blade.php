@@ -52,4 +52,13 @@
     </div>
 
 </section>
+
+<div class="mt-8 p-6 bg-white rounded-xl shadow-sm border border-orange-100">
+    <h3 class="font-bold text-orange-600">Informasi Toko</h3>
+    <div class="mt-2 text-sm">
+        <p><strong>Nama Toko:</strong> POS Toko 5CM</p>
+        <p><strong>Alamat:</strong> Jl. A No. 45, Kota B</p>
+        <p><strong>Kasir:</strong> Fulan (Admin)</p>
+    </div>
+</div>
 @endsection

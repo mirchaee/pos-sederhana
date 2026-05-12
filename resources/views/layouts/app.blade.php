@@ -15,11 +15,14 @@
                     <p class="text-sm text-orange-100">Praktikum Laravel + Tailwind CSS</p>
                 </div>
 
+                
                 <nav class="flex gap-2 text-sm font-medium">
-                    <a href="{{ route('dashboard') }}" class="rounded-lg px-3 py-2 hover:bg-orange700">Dashboard</a>
-                    <a href="{{ route('produk.index') }}" class="rounded-lg px-3 py-2 hover:bgorange-700">Produk</a>
-                    <a href="{{ route('pelanggan.index') }}" class="rounded-lg px-3 py-2 hover:bgorange-700">Pelanggan</a>
-                    <a href="{{ route('transaksi.index') }}" class="rounded-lg px-3 py-2 hover:bgorange-700">Transaksi</a>
+                    
+                    <a href="{{ route('dashboard') }}" class="px-3 py-2 rounded-lg {{ request()->routeIs('dashboard') ? 'bg-orange-800' : 'hover:bg-orange-700' }}">🏠 Dashboard</a>
+                    <a href="{{ route('produk.index') }}" class="px-3 py-2 rounded-lg {{ request()->routeIs('produk.index') ? 'bg-orange-800' : 'hover:bg-orange-700' }}">📦 Produk</a>
+                    <a href="{{ route('pelanggan.index') }}" class="px-3 py-2 rounded-lg {{ request()->routeIs('pelanggan.index') ? 'bg-orange-800' : 'hover:bg-orange-700' }}">👥 Pelanggan</a>
+                    <a href="{{ route('transaksi.index') }}" class="px-3 py-2 rounded-lg {{ request()->routeIs('transaksi.index') ? 'bg-orange-800' : 'hover:bg-orange-700' }}">💰 Transaksi</a>
+                    <a href="{{ route('laporan.index') }}" class="px-3 py-2 rounded-lg {{ request()->routeIs('laporan.index') ? 'bg-orange-800' : 'hover:bg-orange-700' }}">📊 Laporan</a>
                 </nav>
             </div>
         </header>
